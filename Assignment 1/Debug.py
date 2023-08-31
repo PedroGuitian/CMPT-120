@@ -16,7 +16,8 @@ def main():
 
     #insert your name into this variable
     name = ""
-    print("Hello, my name is ", name)
+    print("Hello, my name is Pedro"
+          , name)
 
     #insert your best friend's name here and have it print out
     name2 = ""
