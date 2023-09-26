@@ -9,6 +9,7 @@
 
 #additional instructions: instead of setting our variable to 10, what if we asked the user for the variable and used that value in our comparisons?
 def main():
+    
     number = input("choose a random number")
     if int(number) > 12:
         print(str(number) + " is greater than 12")
