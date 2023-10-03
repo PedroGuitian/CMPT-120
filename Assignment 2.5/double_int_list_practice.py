@@ -1,7 +1,7 @@
 def main():
   
   #set this to any double
-  doubleValue =
+  doubleValue = 
   
   #set this to any int
   intValue = 
