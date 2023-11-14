@@ -25,7 +25,23 @@ create a function because this college is a wacky one- every day they generate a
 '''
 
 class student:
-    
+    def __init__(self, name, student_id, year, major, gpa):
+        self.name = name
+        self.student_id = student_id
+        self.year = year
+        self.major = major
+        self.gpa = gpa
+
+    def is_eligible_for_honors(self):
+        return self.gpa > 3.5
+
+
+
+student1 = student("John Doe", 123456, "Freshman", "Computer Science", 3.8)
+student2 = student("Jane Smith", 789012, "Sophomore", "Mathematics", 3.2)
+
+print(f"{student1.name} is eligible for honors: {student1.is_eligible_for_honors()}")
+print(f"{student2.name} is eligible for honors: {student2.is_eligible_for_honors()}")
     
     
     
@@ -33,6 +49,13 @@ class student:
     
 def main():
     #create three students and check if they get free lunch and if they qualify for honors
-    
-    
+    def generate_and_check_id(student):
+        # Generate a random student ID of the same length as the provided student's ID
+        random_id = random.randint(10 ** (len(str(student.student_id)) - 1), 10 ** len(str(student.student_id)) - 1)
+
+        # Check if the random ID matches the student's ID
+        if random_id == student.student_id:
+            print(f"Winner! {student.name} gets free lunch!")
+        else:
+            print("Loser!")
 main()
